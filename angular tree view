@@ -118,4 +118,9 @@ parentChildComnunication{
     @ViewChildren,
     @ContentChild,
     @ContentChildren,
+    ng-content,
+    ng-container,
+    ng-template,
+    ngTemplateOutlet
+    
 }
