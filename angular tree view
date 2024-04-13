@@ -1,0 +1,121 @@
+module{
+    app module
+    router module
+    shared module
+    module loading startegies{
+        eger loading
+        lazy loading
+        pre loading
+    }
+}
+binding{
+    1 way{
+        property [],
+        event ()
+    }
+    2 way{
+        [(ngModel)]
+    }
+}
+directive{
+    components,
+    attribute,
+    structural
+    custom{
+        @HostBinding,
+        @HostLister,
+        ElementRef,
+        Renderer2
+    }
+}
+routing{
+    router 
+    router outlet
+    activated router
+    params
+    query params
+    fragments
+}
+pipes{
+    inbuild
+    custom
+}
+services{
+    @injectable
+    Service tokens
+}
+forms{
+    tdf{
+        create form,
+        validation,
+        group form{
+            ngModelGroup,
+            ngForm
+        }
+    },
+    reactive{
+        create form,
+        validation,
+        custom validation,
+        asyc validators,
+        setValue
+        patchValue,
+        formArray{
+            FormControl
+            FormGroup
+            formControlName
+            formArrayName
+            formGroupName
+            let item of form.get('skills')['controls']
+        }
+    }
+}
+hooks{
+    ngOnChanges{
+        A lifecycle hook that is called when any data-bound property of a directive changes.
+        Define an ngOnChanges(changes:SimpleChanges) method to handle the changes.
+    },
+    ngOnInit{
+        A lifecycle hook that is called after Angular has initialized all data-bound properties of a directive.
+        Define an ngOnInit() method to handle any additional initialization tasks
+    }
+    ngDoCheck{
+        Initially It calls after ngOnInit , and after that on every changeDetection lifeCycle 
+    },
+    ngAfterContentInit{
+        Initially It calls after ngDoCheck.
+        A lifecycle hook that is called after Angular has fully initialized all content of a directive. 
+        It will run only once when the projected content is initialized.
+    },
+    ngAfterContentChecked{
+        A callback method that is invoked immediately after the default change
+         detector has completed checking all of the directive's content. 
+    },
+    ngAfterViewInit{
+        A lifecycle hook that is called after Angular has fully initialized a component's view
+    },
+    ngAfterViewChecked{
+        Initially It calls after ngAfterViewInit.
+    },
+    ngOnDestroy{
+
+    },
+}
+gaurds{
+    canActivate,
+    canActivateChild,
+    canDeactivate,
+    resolve,
+    canLoad,
+}
+interceptors{
+    intercept(request,)
+}
+parentChildComnunication{
+    @Input,
+    @Output,
+    @ViewChild,
+    @ViewChildren,
+    @ContentChild,
+    @ContentChildren,
+}
